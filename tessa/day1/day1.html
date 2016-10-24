@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+    p{font-family: KBZipaDeeDooDah;
+        font-size:50px;}
+
+        img{
+            width:100%;
+            height:500px;
+        }
+
+    </style>
+    
+</head>
+<body>
+<p>Tessa October 17th, 2016</p>
+
+
+<img src="panorama1.jpg">
+<img src="panorama2.jpg">
+
+
+<script type="text/javascript">
+
+
+    
+    function makeSquare (x) {
+
+            var square = document.createElement('div');
+                        document.body.appendChild(square);
+            square.style.width = "300px";
+            square.style.height = "300px";
+            square.style.display = "inline-block";
+            square.style.margin = "20px";
+            square.style.backgroundRepeat = "no-repeat";
+            square.style.border = "1px";
+            // square.style.backgroundColor = "green";
+
+            square.style.backgroundImage = "url(./" + x + ".jpg)";
+
+            square.style.backgroundSize = "cover";
+            square.style.id = "square" + x;};
+
+
+    for (var i = 1; i < 14; i++) 
+    { makeSquare(i);}
+</script>
+</body>
+</html>
